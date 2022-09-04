@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+      body {
+        background: #6d6360;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        height: 100vh;
+        font-family: "Josefin Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        background: #71d5b5;
+        width: 1500px;
+      }
+      .block {
+        width: 350px;
+        aspect-ratio: 1;
+        background: blue;
+        padding: 20px;
+        border: 20px;
+        /* display: flex;
+        align-items: flex-end; */
+      }
+      .block сhild {
+        background: rgb(0, 255, 64);
+        color: #fff;
+        width: 100px;
+        height: 80px;
+        border: 4px solid rgb(48, 211, 16);
+        margin: 10px;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #71d5b5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="block">
+        <div class="logo">Flexbox</div>
+      </div>
+    </div>
+
+    <div class="block child">
+      <div>1</div>
+      <div style="justify-self: flex-start">2</div>
+      <div style="justify-self: flex-end">3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>
